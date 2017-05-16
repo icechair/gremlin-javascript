@@ -136,7 +136,8 @@
     "examples:browser": "babel-node examples/server",
     "examples:node": "babel-node examples/node-example",
     "test:node": "mocha ./test --compilers js:babel-register --recursive --reporter spec",
-    "test:node:watch": "npm run test:node -- --watch"
+    "test:node:watch": "npm run test:node -- --watch",
+    "postinstall": "npm run build"
   },
   "version": "2.3.2"
 }
